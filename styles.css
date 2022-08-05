@@ -140,21 +140,31 @@ section{
     align-items: center;
 }
 
-.product-container img{
-    width: auto;
-    max-height: 650px;
+.product{
+    background-color: var(--dark-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 30rem;
+    width: 25rem;
 }
 
-.product{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.product img{
+    width: 100%;
+    height: 80%;
 }
 
 .product-info{
-    font-size: 20px;
-    font-weight: 600;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.precio{
+    color: rgb(21, 21, 21);
+    font-size: 1.1rem;
+    margin-bottom: 15px;
 }
 
 .gallery{
