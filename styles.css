@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+
+:root{
+    --orange: #CC9B6D;
+    --yellow: #F1CA89;
+    --light-pink: #F2DAC3;
+    --dark-white:#ebebeb;
+    --light-grey: #c8c2bc;
+    --grey: #817b75;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+#check{
+    display: none;
+}
+
+.checkbutton{
+    font-size: 2rem;
+    color: white;
+    float: right;
+    line-height: 5rem;
+    margin-right: 2.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px 5px 30px;
+}
+
+nav img{
+    height: 50px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    margin: 14px;
+}
+
+nav a{
+    font-size: 1.2rem;
+    font-weight: 1000;
+    letter-spacing: 1px;
+    color: var(--dark-white);
+}
+
+section{
+    width: 100%;
+    min-height: 700px;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url(./assets/fondo-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin-top: -70px;
+    font-size: 3rem;
+    color: var(--dark-white);
+}
+
+.about-us{
+    height: 100vh;
+    background-image: url(./assets/fondo-aboutus.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 0px 0px 3px rgb(0 0 0 / 100%);
+}
+
+.about-us h2{
+    width: 500px;
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: var(--dark-white);
+    padding-left: 50px;
+}
+
+.about-us p{
+    width: 500px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--dark-white);
+    padding-left: 50px;
+}
+
+.products{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(./assets/fondo-productos.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.products h3{
+    font-size: 3rem;
+    padding-top: 50px;
+    color: var(--orange);
+    text-shadow: 0px 0px 3px rgb(0 0 0 / 100%);
+}
+
+.product-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product-container img{
+    width: auto;
+    max-height: 650px;
+}
+
+.product{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-info{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.gallery{
+    margin: 55px 0;
+    columns: 5 320px;
+    column-gap: 0.5rem;
+}
+
+.gallery img{
+    margin-bottom: 0.5rem;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.contact{
+    height: 100vh;
+    background-image: url(./assets/fondo-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-container{
+    height: 20rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    color: var(--dark-white);
+    text-shadow: 0px 0px 3px rgb(0 0 0 / 100%);
+
+}
+
+.contact-container h2{
+    font-size: 2.3rem;
+}
+.contact-container p{
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+.fa-solid{
+    margin-right: 10px;
+}
+
+.contact-redes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-brands{
+    color: var(--dark-white);
+    font-size: 2rem;
+}
+
+.contact-map {
+    width: 30rem;
+    height: 25rem;
+}
+
+footer{
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-grey);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--dark-white);
+    text-shadow: 0px 0px 3px rgb(0 0 0 / 100%);
+}
