@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+
+:root{
+    --orange: #CC9B6D;
+    --yellow: #F1CA89;
+    --light-pink: #F2DAC3;
+    --dark-white:#ebebeb;
+    --light-grey: #c8c2bc;
+    --grey: #817b75;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px 5px 30px;
+}
+
+nav img{
+    height: 50px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    margin: 14px;
+}
+
+nav li a{
+    font-size: 1.2rem;
+    font-weight: 1000;
+    letter-spacing: 1px;
+    color: var(--grey);
+}
+
+.right-buttons a{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: var(--grey);
+}
+
+.right-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .fa-solid {
+    color: black;
+    margin: 0 5px;
+}
+
+.right-buttons a, nav li a{
+    color: black;
+    background-image: linear-gradient(currentcolor , currentcolor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size .2s;
+}
+
+nav li a:hover, nav a:hover{
+    background-size: 100% 1px;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    min-height: 800px;
+    background-image: url(./assets/fondo-login-listo.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: -70px;
+    padding: 200px 50px 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 0;
+}
+
+.login{
+    width: 40%;
+    padding: 0 100px;
+}
+
+.login h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+input{
+    margin: 10px 0 30px;
+    border-radius: 15px;
+    border: none;
+    height: 40px;
+    padding: 0 20px;
+}
+
+button{
+    margin: 10px 0;
+    border-radius: 15px;
+    border: none;
+    height: 40px;
+    background-color: var(--grey);
+    transition: background-color .2s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--light-grey);
+    border: black 1px solid;
+}
+
+.login a{
+    text-decoration: none;
+    color: black;
+    padding-left: 5px;
+}
+
+label{
+    padding: 5px;
+}
