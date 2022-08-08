@@ -60,11 +60,41 @@ nav ul li{
     margin: 14px;
 }
 
-nav a{
+nav li a{
     font-size: 1.2rem;
     font-weight: 1000;
     letter-spacing: 1px;
     color: var(--dark-white);
+}
+
+.right-buttons a{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: var(--dark-white);
+}
+
+.right-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .fa-solid {
+    color: var(--dark-white);
+    margin: 0 5px;
+}
+
+.right-buttons a, nav li a{
+    color: var(--dark-white);
+    background-image: linear-gradient(currentcolor , currentcolor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size .2s;
+}
+
+nav li a:hover, nav a:hover{
+    background-size: 100% 1px;
 }
 
 section{
@@ -250,7 +280,7 @@ section{
     display: flex;
     align-items: center;
 }
-.fa-solid{
+.contact-container .fa-solid{
     margin-right: 10px;
 }
 
