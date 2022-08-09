@@ -88,11 +88,14 @@ section{
     width: 100%;
     height: 100vh;
     min-height: 800px;
-    background-image: url(./assets/fondo-login-listo.jpg);
+    background-image: url(./assets/fondo-register.jpg);
     background-size: cover;
     background-position: center;
     margin-top: -70px;
     padding: 200px 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 form{
@@ -101,12 +104,12 @@ form{
     margin: 30px 0 0;
 }
 
-.login{
+.register{
     width: 40%;
-    padding: 0 0 0 100px;
+    padding: 0 100px 0 0;
 }
 
-.login h2{
+.register h2{
     text-align: center;
     font-size: 2rem;
 }
@@ -134,7 +137,7 @@ button:hover{
     border: black 1px solid;
 }
 
-.login a{
+.register a{
     text-decoration: none;
     color: black;
     padding-left: 5px;
