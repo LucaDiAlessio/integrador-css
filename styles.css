@@ -23,19 +23,7 @@ body{
     font-family: 'Fira Sans', sans-serif;
 }
 
-#check{
-    display: none;
-}
-
-.checkbutton{
-    font-size: 2rem;
-    color: white;
-    float: right;
-    line-height: 5rem;
-    margin-right: 2.5rem;
-    cursor: pointer;
-    display: none;
-}
+/*   NAVBAR   */
 
 nav{
     width: 100%;
@@ -64,13 +52,11 @@ nav li a{
     font-size: 1.2rem;
     font-weight: 1000;
     letter-spacing: 1px;
-    color: var(--dark-white);
 }
 
 .right-buttons a{
     font-size: 1.2rem;
     letter-spacing: 1px;
-    color: var(--dark-white);
 }
 
 .right-buttons{
@@ -79,13 +65,13 @@ nav li a{
     align-items: center;
 }
 
-nav .fa-solid {
+nav .fa-user {
     color: var(--dark-white);
     margin: 0 5px;
 }
 
 .right-buttons a, nav li a{
-    color: var(--dark-white);
+    color: white;
     background-image: linear-gradient(currentcolor , currentcolor);
     background-position: 0% 100%;
     background-repeat: no-repeat;
@@ -96,6 +82,22 @@ nav .fa-solid {
 nav li a:hover, nav a:hover{
     background-size: 100% 1px;
 }
+
+.checkbutton{
+    font-size: 2rem;
+    color: white;
+    float: right;
+    line-height: 5rem;
+    margin-right: 2.5rem;
+    cursor: pointer;
+    display: none;
+
+}
+#check{
+    display: none;
+}
+/*   HERO   */
+
 
 section{
     width: 100%;
@@ -114,6 +116,7 @@ section{
     font-size: 3rem;
     margin-top: -70px;
     font-size: 3rem;
+    text-align: center;
     color: var(--dark-white);
 }
 
@@ -310,4 +313,89 @@ footer{
     font-weight: 600;
     color: var(--dark-white);
     text-shadow: 0px 0px 3px rgb(0 0 0 / 100%);
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1100px){
+    .checkbutton{
+        display: block;
+        margin: 0;
+    }
+    ul{
+        position: absolute;
+        display: block;
+        width: 45%;
+        background-color: rgba(0, 0, 0, 0.7);
+        top: 0rem;
+        left: -110%;
+        text-align: center;
+        transition: all .5s;
+        min-width: 180px;
+    }
+
+    nav{
+        height: 4rem;
+        padding: 4px;
+    }
+    nav ul li{
+        margin: 3.5rem 0;
+    }
+    nav ul li a{
+        font-size: 1.5rem;
+    }
+    #check:checked ~ ul{
+        left: -15px;
+        position: absolute;
+    }
+
+    .products-text{
+    width: 95%;
+    }
+
+    .product-container{
+        padding: 10px 10px 100px 10px;
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .product{
+        height: 16rem;
+        width: auto;
+    }
+}
+
+@media (max-width: 850px){
+    .contact-map{
+        display: none;
+    }
+    .about-us p, .about-us h2 {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 600px){
+    .img3, .img5, .img6, .img7, .img8, .img9, .img10{
+        display: none;
+    }
+    nav img{
+        height: 35px;
+    }
+    .checkbutton{
+        font-size: 1.5rem;
+    }
+    .right-buttons a{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 400px){
+    .right-buttons i{
+        display: none;
+    }
+    .right-buttons{
+        flex-direction: column;
+    }
 }
